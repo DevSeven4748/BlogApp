@@ -9,6 +9,6 @@ namespace BlogApp.Data.Entities
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
 
-        public virtual List<User> Users { get; set; }
+        public virtual List<UserRole> UserRoles { get; set; } = default!;
     }
 }

@@ -14,7 +14,7 @@ namespace BlogApp.Data.Entities
         public byte[] PasswordSalt { get; set; } = Array.Empty<byte>();
         public bool IsActive { get; set; } = false;
 
-        public virtual List<UserRole> Roles { get; set; } = default!;
+        public virtual List<UserRole> UserRoles { get; set; } = default!;
         public virtual List<BlogPost> Posts { get; set; } = default!;
     }
 }
