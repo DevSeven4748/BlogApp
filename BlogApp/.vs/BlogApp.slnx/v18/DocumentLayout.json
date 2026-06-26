@@ -1,12 +1,126 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\entities\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\entities\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\blogapp.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\blogapp.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Entities\\Category.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\Category.cs",
+              "RelativeToolTip": "BlogApp.Data\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:22:55.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\UserRole.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Entities\\UserRole.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\UserRole.cs",
+              "RelativeToolTip": "BlogApp.Data\\Entities\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:22:45.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Entities\\Role.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\Role.cs",
+              "RelativeToolTip": "BlogApp.Data\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:22:38.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogPost.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\BlogPost.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Entities\\BlogPost.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\BlogPost.cs",
+              "RelativeToolTip": "BlogApp.Data\\Entities\\BlogPost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:22:19.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Entities\\User.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Entities\\User.cs",
+              "RelativeToolTip": "BlogApp.Data\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:22:12.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogApp.Data",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+              "RelativeDocumentMoniker": "BlogApp.Data\\BlogApp.Data.csproj",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+              "RelativeToolTip": "BlogApp.Data\\BlogApp.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-26T08:21:21.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
