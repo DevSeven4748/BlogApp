@@ -1,1 +1,7 @@
-<Solution />
+<Solution>
+  <Project Path="E:/Dev/Repos/SelfStudy/Portfolio/Projects/BlogApp/BlogApp/BlogApp.Admin/BlogApp.Admin.csproj" />
+  <Project Path="E:/Dev/Repos/SelfStudy/Portfolio/Projects/BlogApp/BlogApp/BlogApp.Application/BlogApp.Application.csproj" />
+  <Project Path="E:/Dev/Repos/SelfStudy/Portfolio/Projects/BlogApp/BlogApp/BlogApp.Core/BlogApp.Core.csproj" />
+  <Project Path="E:/Dev/Repos/SelfStudy/Portfolio/Projects/BlogApp/BlogApp/BlogApp.Data/BlogApp.Data.csproj" />
+  <Project Path="E:/Dev/Repos/SelfStudy/Portfolio/Projects/BlogApp/BlogApp/BlogApp.MVC/BlogApp.MVC.csproj" />
+</Solution>
