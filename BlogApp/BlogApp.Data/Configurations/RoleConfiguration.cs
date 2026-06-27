@@ -11,7 +11,7 @@ namespace BlogApp.Data.Configurations
             builder.HasKey(r => r.Id);
 
             builder.Property(r => r.Id)
-                .ValueGeneratedNever(); // turning off auto-increment because role are not a dynamic table
+                .ValueGeneratedNever(); // turning off auto-increment because `role` is not a dynamic table
 
             builder.Property(r => r.Name)
                 .IsRequired()
