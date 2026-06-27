@@ -4,7 +4,7 @@ using BlogApp.Data.Entities;
 
 namespace BlogApp.Data.Configurations
 {
-    public class UserRoleConfiguration : IEntityTypeConfiguration<UserRole> 
+    public class UserRoleConfiguration : IEntityTypeConfiguration<UserRole>
     {
         public void Configure(EntityTypeBuilder<UserRole> builder)
         {
@@ -24,5 +24,5 @@ namespace BlogApp.Data.Configurations
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
-    }
 }
+
