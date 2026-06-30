@@ -8,7 +8,7 @@ namespace BlogApp.Application.Services.Abstract
 {
     public interface IAuthService
     {
-        public Result Register(RegisterRequest request);
+        Task<Result> RegisterAsync(RegisterRequest request);
 
         // public Result Login();
 

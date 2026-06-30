@@ -1,8 +1,10 @@
 using BlogApp.Data;
+using BlogApp.Application;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDataServices(builder.Configuration);
+builder.Services.AddApplicationServices();
 
 var app = builder.Build();
 

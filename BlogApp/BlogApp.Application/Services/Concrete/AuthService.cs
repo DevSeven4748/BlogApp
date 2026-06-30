@@ -13,7 +13,7 @@ namespace BlogApp.Application.Services.Concrete
 {
     public class AuthService(AppDbContext context) : IAuthService
     {
-        public Result Register(RegisterRequest request)
+        public async Task<Result> RegisterAsync(RegisterRequest request)
         {
             //business rule
             var userExists = context.Users.Any(u => u.Email == request.Email);
@@ -34,12 +34,8 @@ namespace BlogApp.Application.Services.Concrete
                 IsActive = false
             };
 
-
-
-
-
-
-
+            context.Users.Add(user);
+            await context.SaveChangesAsync();
 
             return Result.Ok();
         }
