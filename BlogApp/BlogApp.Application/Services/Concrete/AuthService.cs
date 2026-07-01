@@ -1,4 +1,4 @@
-﻿using BlogApp.Application.DTOs;
+﻿using BlogApp.Application.DTOs.Auth;
 using BlogApp.Application.Services.Abstract;
 using BlogApp.Core.Results;
 using BlogApp.Core.Security;

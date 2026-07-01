@@ -1,19 +1,32 @@
-﻿using BlogApp.MVC.Models.ViewModels.AuthViewModels;
+﻿using BlogApp.Application.DTOs.Auth;
+using BlogApp.Application.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.MVC.Controllers
 {
-    public class AuthController : Controller
+    public class AuthController(IAuthService authService) : Controller
     {
+        [HttpGet("Register")]
         public IActionResult Register()
         {
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Register(RegisterViewModel model)
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(RegisterRequest model)
         {
-            return View();
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var result = await authService.RegisterAsync(model);
+
+            if(!result.Success)
+            {
+                ViewBag.ErrorMessage = result.Message;
+                return View(model);
+            }
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

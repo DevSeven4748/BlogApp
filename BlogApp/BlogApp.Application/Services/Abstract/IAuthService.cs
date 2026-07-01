@@ -1,4 +1,4 @@
-﻿using BlogApp.Application.DTOs;
+﻿using BlogApp.Application.DTOs.Auth;
 using BlogApp.Core.Results;
 using System;
 using System.Collections.Generic;

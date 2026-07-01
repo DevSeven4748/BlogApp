@@ -1,8 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace BlogApp.MVC.Models.ViewModels.AuthViewModels
+namespace BlogApp.Application.DTOs.Auth
 {
-    public class RegisterViewModel
+    public class RegisterRequest
     {
         //refactor into fluent validation library
         [Required, MaxLength(50)]
