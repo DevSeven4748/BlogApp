@@ -15,7 +15,7 @@ namespace BlogApp.Data.Configurations
 
             builder.HasOne(u => u.User)
                 .WithMany(ur => ur.UserRoles)
-                .HasForeignKey(u => u.User.Id)
+                .HasForeignKey(u => u.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne(r => r.Role)
