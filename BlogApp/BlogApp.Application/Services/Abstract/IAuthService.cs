@@ -10,7 +10,7 @@ namespace BlogApp.Application.Services.Abstract
     {
         Task<Result> RegisterAsync(RegisterRequest request);
 
-        // public Result Login();
+        Task<Result<LoginResponse>> LoginAsync(LoginRequest request);
 
     }
 }

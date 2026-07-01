@@ -1,5 +1,6 @@
 using BlogApp.Data;
 using BlogApp.Application;
+using BlogApp.Data.Seeders;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
@@ -11,7 +12,8 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    context.Database.EnsureCreated(); // need refactoring into async
+    await context.Database.EnsureCreatedAsync();
+    await DbSeeder.SeedRolesAsync(context);
 }
 
 if (!app.Environment.IsDevelopment())

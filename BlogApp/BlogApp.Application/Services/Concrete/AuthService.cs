@@ -1,4 +1,5 @@
-﻿using BlogApp.Application.DTOs.Auth;
+﻿using Azure.Core;
+using BlogApp.Application.DTOs.Auth;
 using BlogApp.Application.Services.Abstract;
 using BlogApp.Core.Results;
 using BlogApp.Core.Security;
@@ -40,7 +41,21 @@ namespace BlogApp.Application.Services.Concrete
             return Result.Ok();
         }
 
+        public async Task<Result<LoginResponse>> LoginAsync(LoginRequest request) 
+        {
+            //var userExists = context.Users.Any(u => u.Email == request.Email);
 
+            //if(!userExists)
+            //    return Result.Fail("User not found.");
+ 
+            //password verificaton
+
+
+
+           await Task.Delay(1000);
+
+            return (Result<LoginResponse>)Result<LoginResponse>.Fail("");
+        }
 
 
 
