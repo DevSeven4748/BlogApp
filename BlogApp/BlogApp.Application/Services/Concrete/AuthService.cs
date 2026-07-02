@@ -5,6 +5,7 @@ using BlogApp.Core.Results;
 using BlogApp.Core.Security;
 using BlogApp.Data;
 using BlogApp.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
@@ -43,18 +44,35 @@ namespace BlogApp.Application.Services.Concrete
 
         public async Task<Result<LoginResponse>> LoginAsync(LoginRequest request) 
         {
-            //var userExists = context.Users.Any(u => u.Email == request.Email);
+            var user = context.Users
+                .Include(u => u.UserRoles)
+                .ThenInclude(ur => ur.Role)
+                .FirstOrDefault(u => u.Email == request.Email);
 
-            //if(!userExists)
-            //    return Result.Fail("User not found.");
- 
-            //password verificaton
+            if(user is null)
+                return Result<LoginResponse>.Fail("User email or password is incorrect.");
+
+            var isPasswordCorrect = HashingHelper.VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt);
+
+            if(!isPasswordCorrect)
+                return Result<LoginResponse>.Fail("User email or password is incorrect.");
+
+            var response = new LoginResponse
+            {
+                Id = user.Id,
+                FirtName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                IsActive = user.IsActive,
+                Roles = user.UserRoles.Select(ur => ur.Role.Name).ToList()
+            };
+
+            return Result<LoginResponse>.Ok(response);
 
 
 
-           await Task.Delay(1000);
 
-            return (Result<LoginResponse>)Result<LoginResponse>.Fail("");
+
         }
 
 

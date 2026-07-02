@@ -31,7 +31,7 @@ namespace BlogApp.Core.Results
             return new Result<T> { Data = data, Success = true, Message = message };
         }
 
-        public static Result<T> Fail(string message, T? data)
+        public static Result<T> Fail(string message, T? data = default)
         {
             return new Result<T> { Data = data, Success = false, Message = message };
         }

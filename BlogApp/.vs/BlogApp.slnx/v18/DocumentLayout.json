@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\services\\concrete\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.application\\dtos\\auth\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\dtos\\auth\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.data\\seeders\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C852C41-C103-D45B-FBEF-C03C328BF5CA}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\seeders\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.application\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F0DEA2-B5CB-28BC-AE88-54B4FE5F8F1C}|BlogApp.Core\\BlogApp.Core.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.core\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F0DEA2-B5CB-28BC-AE88-54B4FE5F8F1C}|BlogApp.Core\\BlogApp.Core.csproj|solutionrelative:blogapp.core\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +30,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Result.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Core\\Results\\Result.cs",
+              "RelativeDocumentMoniker": "BlogApp.Core\\Results\\Result.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Core\\Results\\Result.cs",
+              "RelativeToolTip": "BlogApp.Core\\Results\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T18:37:58.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "BlogApp.MVC\\Program.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Program.cs",
+              "RelativeToolTip": "BlogApp.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T18:30:02.281Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,34 +66,36 @@
               "RelativeDocumentMoniker": "BlogApp.Application\\Services\\Concrete\\AuthService.cs",
               "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\AuthService.cs",
               "RelativeToolTip": "BlogApp.Application\\Services\\Concrete\\AuthService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAD4vzgAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwDUAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T18:13:29.208Z",
+              "WhenOpened": "2026-07-02T18:27:19.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Abstract\\IAuthService.cs",
+              "RelativeDocumentMoniker": "BlogApp.Application\\Services\\Abstract\\IAuthService.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Abstract\\IAuthService.cs",
+              "RelativeToolTip": "BlogApp.Application\\Services\\Abstract\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T18:27:16.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "BlogApp.MVC\\Program.cs",
-              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Program.cs",
-              "RelativeToolTip": "BlogApp.MVC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\DTOs\\Auth\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "BlogApp.Application\\DTOs\\Auth\\LoginResponse.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\DTOs\\Auth\\LoginResponse.cs",
+              "RelativeToolTip": "BlogApp.Application\\DTOs\\Auth\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T18:12:17.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DbSeeder.cs",
-              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Seeders\\DbSeeder.cs",
-              "RelativeDocumentMoniker": "BlogApp.Data\\Seeders\\DbSeeder.cs",
-              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Data\\Seeders\\DbSeeder.cs",
-              "RelativeToolTip": "BlogApp.Data\\Seeders\\DbSeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T17:52:53.654Z"
+              "WhenOpened": "2026-07-02T18:26:29.723Z",
+              "EditorCaption": ""
             }
           ]
         }
