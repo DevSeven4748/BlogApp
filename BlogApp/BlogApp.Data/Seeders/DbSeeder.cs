@@ -8,7 +8,6 @@ namespace BlogApp.Data.Seeders
     {
         public static async Task SeedRolesAsync(AppDbContext context) 
         { 
-        
             var roleIds = new[] {RoleConstants.AdminId, RoleConstants.ModeratorId, RoleConstants.VerifiedUserId};
 
             if (await context.Roles.AnyAsync(r => roleIds.Contains(r.Id)))
@@ -20,10 +19,8 @@ namespace BlogApp.Data.Seeders
                 new(){ Id = RoleConstants.ModeratorId, Name = RoleConstants.Moderator},
                 new(){Id = RoleConstants.VerifiedUserId, Name = RoleConstants.VerifiedUser}
             };
-
             await context.Roles.AddRangeAsync(roles);
             await context.SaveChangesAsync();
-
         }
     }
 }

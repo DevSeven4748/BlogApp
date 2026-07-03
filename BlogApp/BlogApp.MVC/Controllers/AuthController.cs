@@ -26,6 +26,31 @@ namespace BlogApp.MVC.Controllers
                 return View(model);
             }
 
+            return RedirectToAction(nameof(Login));
+        }
+
+        [HttpGet("Login")]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(LoginRequest model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+            
+            var result = await authService.LoginAsync(model);
+
+            if (!result.Success)
+            {
+                ViewBag.ErrorMessage = result.Message;
+                return View(model);
+            }
+
+
+            //TODO: cookie authentication
             return RedirectToAction("Index", "Home");
         }
     }

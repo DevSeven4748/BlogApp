@@ -18,14 +18,14 @@ namespace BlogApp.Application.Services.Concrete
         public async Task<Result> RegisterAsync(RegisterRequest request)
         {
             //business rule
-            var userExists = context.Users.Any(u => u.Email == request.Email);
+            var userExists = await context.Users.AnyAsync(u => u.Email == request.Email);
             if (userExists) 
                 return Result.Fail("This e-mail is already in use.");
 
             //hashing password
             var hashResult = HashingHelper.CreatePasswordHash(request.Password);
 
-            //save to db
+            //mapping request to user entity and saving to database
             var user = new User
             {
                 FirstName = request.FirstName,
@@ -38,16 +38,15 @@ namespace BlogApp.Application.Services.Concrete
 
             context.Users.Add(user);
             await context.SaveChangesAsync();
-
             return Result.Ok();
         }
 
         public async Task<Result<LoginResponse>> LoginAsync(LoginRequest request) 
         {
-            var user = context.Users
-                .Include(u => u.UserRoles)
+            var user = await context.Users
+                .Include(u => u.UserRoles) //eager loading
                 .ThenInclude(ur => ur.Role)
-                .FirstOrDefault(u => u.Email == request.Email);
+                .FirstOrDefaultAsync(u => u.Email == request.Email);
 
             if(user is null)
                 return Result<LoginResponse>.Fail("User email or password is incorrect.");
