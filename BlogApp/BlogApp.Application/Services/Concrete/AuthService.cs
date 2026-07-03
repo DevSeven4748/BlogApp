@@ -56,6 +56,10 @@ namespace BlogApp.Application.Services.Concrete
             if(!isPasswordCorrect)
                 return Result<LoginResponse>.Fail("User email or password is incorrect.");
 
+            var isUserActive = user.IsActive;
+            if (!isUserActive)
+                return Result<LoginResponse>.Fail("Your account is de-activated.");
+
             var response = new LoginResponse
             {
                 Id = user.Id,
