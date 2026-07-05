@@ -64,7 +64,7 @@ namespace BlogApp.Application.Services.Concrete
             var response = new LoginResponse
             {
                 Id = user.Id,
-                FirtName = user.FirstName,
+                FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
                 IsActive = user.IsActive,

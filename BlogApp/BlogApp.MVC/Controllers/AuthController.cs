@@ -1,10 +1,11 @@
 ﻿ using BlogApp.Application.DTOs.Auth;
 using BlogApp.Application.Services.Abstract;
+using BlogApp.MVC.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.MVC.Controllers
 {
-    public class AuthController(IAuthService authService) : Controller
+    public class AuthController(IAuthService authService, ICookieAuthService cookieAuthService) : Controller
     {
         [HttpGet("Register")]
         public IActionResult Register()
@@ -51,6 +52,7 @@ namespace BlogApp.MVC.Controllers
 
 
             //TODO: cookie authentication
+            await cookieAuthService.SignInAsync(result.Data);
             return RedirectToAction("Index", "Home");
         }
     }

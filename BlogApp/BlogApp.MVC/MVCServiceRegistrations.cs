@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using BlogApp.MVC.Services.Abstract;
+using BlogApp.MVC.Services.Concrete;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace BlogApp.MVC
 {
@@ -7,6 +9,10 @@ namespace BlogApp.MVC
         public static IServiceCollection AddMVCServices(this IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddHttpContextAccessor();
+
+            services.AddScoped<ICookieAuthService, CookieAuthService>();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
