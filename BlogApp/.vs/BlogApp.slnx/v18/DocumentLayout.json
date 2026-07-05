@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "BlogApp.MVC\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "BlogApp.MVC\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAHoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-03T19:49:38.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "BlogApp.MVC\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Controllers\\AuthController.cs",
               "RelativeToolTip": "BlogApp.MVC\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T19:42:31.215Z",
+              "WhenOpened": "2026-07-05T14:47:41.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\AuthService.cs",
               "RelativeDocumentMoniker": "BlogApp.Application\\Services\\Concrete\\AuthService.cs",
               "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\AuthService.cs",
               "RelativeToolTip": "BlogApp.Application\\Services\\Concrete\\AuthService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwCsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T19:33:24.744Z",
+              "WhenOpened": "2026-07-05T14:41:33.92Z",
               "EditorCaption": ""
             }
           ]

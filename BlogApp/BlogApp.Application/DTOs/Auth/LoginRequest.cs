@@ -8,7 +8,7 @@ namespace BlogApp.Application.DTOs.Auth
         [Required, MaxLength(100), EmailAddress]
         public string Email { get; set; } = string.Empty;
 
-        [Required, MaxLength(100), DataType(DataType.Password)]
+        [Required, MinLength(6), MaxLength(100), DataType(DataType.Password)]
         public string Password { get; set; } = string.Empty;
     }
 }

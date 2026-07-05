@@ -1,11 +1,13 @@
 using BlogApp.Data;
 using BlogApp.Application;
 using BlogApp.Data.Seeders;
+using BlogApp.MVC;
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddMVCServices();
 builder.Services.AddDataServices(builder.Configuration);
 builder.Services.AddApplicationServices();
+
 
 var app = builder.Build();
 

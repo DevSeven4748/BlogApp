@@ -41,6 +41,7 @@ namespace BlogApp.Application.Services.Concrete
             return Result.Ok();
         }
 
+        //refactor the error messages into yml files
         public async Task<Result<LoginResponse>> LoginAsync(LoginRequest request) 
         {
             var user = await context.Users
