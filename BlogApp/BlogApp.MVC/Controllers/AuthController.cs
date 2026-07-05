@@ -21,7 +21,7 @@ namespace BlogApp.MVC.Controllers
 
             var result = await authService.RegisterAsync(model);
 
-            if(!result.Success)
+            if (!result.Success)
             {
                 ViewBag.ErrorMessage = result.Message;
                 return View(model);
@@ -41,18 +41,27 @@ namespace BlogApp.MVC.Controllers
         {
             if (!ModelState.IsValid)
                 return View(model);
-            
+
             var result = await authService.LoginAsync(model);
 
-            if (!result.Success)
+            if (!result.Success || result.Data is null)
             {
                 ViewBag.ErrorMessage = result.Message;
                 return View(model);
             }
 
 
-            //TODO: cookie authentication
-            await cookieAuthService.SignInAsync(result.Data);
+            //cookie authentication
+            await cookieAuthService.SignInAsync(result.Data!);
+            return RedirectToAction("Index", "Home");
+        }
+
+
+        [HttpGet("Logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await cookieAuthService.SignOutAsync();
+
             return RedirectToAction("Index", "Home");
         }
     }

@@ -27,7 +27,6 @@ namespace BlogApp.MVC.Services.Concrete
             }
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
             var principal = new ClaimsPrincipal(claimsIdentity);
 
             var httpcontext = httpContextAccessor.HttpContext;

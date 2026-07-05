@@ -7,11 +7,38 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">home</a></li>
-               @*  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li> *@
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4"  asp-controller="Auth" asp-action="Login">Login</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4"  asp-controller="Auth" asp-action="Register">Register</a></li>
+                <!-- Home Link -->
+                <li class="nav-item">
+                    <a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a>
+                </li>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <!-- Welcome Mesajı - span yerine a kullanıldı! -->
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" style="color: #FFC107 !important; font-weight: 700; text-shadow: 0 0 10px rgba(255, 193, 7, 0.3);">
+                            <i class="fas fa-user me-1"></i>
+                            Welcome @(User.FindFirst("FullName")?.Value ?? User.Identity.Name)
+                        </a>
+                    </li>
+
+                    <!-- Logout Linki -->
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Auth" asp-action="Logout">
+                            <i class="fas fa-sign-out-alt me-1"></i>
+                            Logout
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Auth" asp-action="Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Auth" asp-action="Register">Register</a>
+                    </li>
+                }
             </ul>
         </div>
     </div>
