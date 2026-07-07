@@ -11,7 +11,6 @@ namespace BlogApp.MVC
             services.AddControllersWithViews();
 
             services.AddHttpContextAccessor();
-
             services.AddScoped<ICookieAuthService, CookieAuthService>();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -29,7 +28,6 @@ namespace BlogApp.MVC
                     options.SlidingExpiration = true;
 
                 });
-
 
             return services;
         }

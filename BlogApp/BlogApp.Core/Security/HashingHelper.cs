@@ -27,7 +27,7 @@ namespace BlogApp.Core.Security
     }
 }
 
-public class HashResult
+    public class HashResult
     {
         public byte[] Hash { get; set; } = Array.Empty<byte>();
         public byte[] Salt { get; set; } = Array.Empty<byte>();

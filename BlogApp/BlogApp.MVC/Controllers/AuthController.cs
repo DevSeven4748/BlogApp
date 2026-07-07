@@ -1,4 +1,4 @@
-﻿ using BlogApp.Application.DTOs.Auth;
+﻿using BlogApp.Application.DTOs.Auth;
 using BlogApp.Application.Services.Abstract;
 using BlogApp.MVC.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
@@ -50,12 +50,10 @@ namespace BlogApp.MVC.Controllers
                 return View(model);
             }
 
-
             //cookie authentication
             await cookieAuthService.SignInAsync(result.Data!);
             return RedirectToAction("Index", "Home");
         }
-
 
         [HttpGet("Logout")]
         public async Task<IActionResult> Logout()
