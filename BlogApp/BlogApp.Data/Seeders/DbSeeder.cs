@@ -6,6 +6,13 @@ namespace BlogApp.Data.Seeders
 {
     public class DbSeeder
     {
+
+        public static async Task SeedAsync(AppDbContext context)
+        {
+            await SeedRolesAsync(context);
+            await SeedCategoriesAsync(context);
+
+        }
         public static async Task SeedRolesAsync(AppDbContext context) 
         { 
             var roleIds = new[] {RoleConstants.AdminId, RoleConstants.ModeratorId, RoleConstants.VerifiedUserId};
@@ -20,6 +27,22 @@ namespace BlogApp.Data.Seeders
                 new(){Id = RoleConstants.VerifiedUserId, Name = RoleConstants.VerifiedUser}
             };
             await context.Roles.AddRangeAsync(roles);
+            await context.SaveChangesAsync();
+        }
+
+        public static async Task SeedCategoriesAsync(AppDbContext context)
+        {
+
+            if (await context.Categories.AnyAsync())
+                return;
+
+            var categories = new List<Category>
+            {
+                new(){ Name = "Technology"},
+                new(){ Name = "Science"},
+                new(){ Name = "Software"}
+            };
+            await context.Categories.AddRangeAsync(categories);
             await context.SaveChangesAsync();
         }
     }

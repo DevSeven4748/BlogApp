@@ -1,0 +1,156 @@
+﻿@using BlogApp.Application.DTOs.Blog
+@model CreateBlogPostRequest
+
+@{
+    ViewData["Title"] = "New Post";
+}
+
+<header class="masthead" style="background-image: url('~/theme/assets/img/home-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>New Post</h1>
+                    <span class="subheading">Share your thoughts with the world</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+
+                        <h2 class="mb-1" style="font-family: 'Lora', serif;">Create a New Post</h2>
+                        <p class="text-muted mb-4" style="font-family: 'Open Sans', sans-serif; font-size: 0.9rem;">
+                            Fill in the details below and publish your blog post
+                        </p>
+
+                        <form asp-action="Create" asp-controller="BlogPost" method="post" id="blogPostForm" novalidate>
+                            @Html.AntiForgeryToken()
+                            <input asp-for="AuthorId" type="hidden" />
+
+                            <div asp-validation-summary="ModelOnly" class="alert alert-danger py-2 small" role="alert"></div>
+
+                            @if (ViewBag.ErrorMessage != null)
+                            {
+                                <div class="alert alert-danger alert-dismissible fade show small py-2" role="alert">
+                                    <i class="fas fa-circle-exclamation me-2"></i>@ViewBag.ErrorMessage
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            }
+
+                            <div class="mb-3">
+                                <label asp-for="Title" class="form-label fw-semibold small"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0">
+                                        <i class="fas fa-heading text-muted" style="font-size: 0.85rem;"></i>
+                                    </span>
+                                    <input asp-for="Title"
+                                           class="form-control border-start-0 ps-0"
+                                           placeholder="Enter an engaging title..." />
+                                </div>
+                                <span asp-validation-for="Title" class="text-danger small"></span>
+                            </div>
+
+                            <div class="mb-4">
+                                <label asp-for="CategoryId" class="form-label fw-semibold small"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0">
+                                        <i class="fas fa-folder-open text-muted" style="font-size: 0.85rem;"></i>
+                                    </span>
+                                    <select asp-for="CategoryId"
+                                            asp-items="ViewBag.Categories"
+                                            class="form-select border-start-0">
+                                        <option value="">— Select a category —</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                            </div>
+
+                            <div class="mb-4">
+                                <label asp-for="Content" class="form-label fw-semibold small"></label>
+
+                                <input type="hidden" asp-for="Content" id="hiddenContent" />
+
+                                <div id="quill-editor" style="height: 350px;"></div>
+
+                                <span asp-validation-for="Content" class="text-danger small"></span>
+                            </div>
+
+                            <div class="d-flex gap-2 justify-content-end">
+                                <a asp-action="Index" asp-controller="Home"
+                                   class="btn btn-outline-secondary">
+                                    <i class="fas fa-xmark me-1"></i>Cancel
+                                </a>
+                                <button type="submit" class="btn btn-dark px-4">
+                                    <i class="fas fa-paper-plane me-2"></i>Publish Post
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <style>
+        /* Quill editörünün kenarlıklarını Bootstrap yapısına uyduruyoruz */
+        .ql-container.ql-snow, .ql-toolbar.ql-snow {
+            border-color: #dee2e6 !important;
+        }
+
+        .ql-toolbar.ql-snow {
+            border-top-left-radius: 0.375rem;
+            border-top-right-radius: 0.375rem;
+        }
+
+        .ql-container.ql-snow {
+            border-bottom-left-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+        }
+    </style>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+
+    <script>
+        // 1. Quill Editörünü Aktif Et
+        const quill = new Quill('#quill-editor', {
+        theme: 'snow',
+        placeholder: 'Write your inspiring story here...'
+        });
+
+        // 2. Form Gönderilirken Veriyi Gizli Input'a Aktar
+        const form = document.getElementById('blogPostForm');
+        const hiddenInput = document.getElementById('hiddenContent');
+
+        form.onsubmit = function() {
+        // Editörün içindeki zengin HTML kodlarını al
+        const htmlContent = quill.root.innerHTML;
+
+        // Eğer editör tamamen boşsa içeriyi temizle (Validation tetiklensin diye)
+        if (quill.getText().trim().length === 0) {
+        hiddenInput.value = "";
+        } else {
+        hiddenInput.value = htmlContent;
+        }
+        };
+    </script>
+}

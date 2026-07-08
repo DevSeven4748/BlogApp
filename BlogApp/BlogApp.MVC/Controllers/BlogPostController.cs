@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BlogApp.Application.DTOs.Blog;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.MVC.Controllers
 {
