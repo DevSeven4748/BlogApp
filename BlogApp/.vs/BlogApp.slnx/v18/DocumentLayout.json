@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.application\\services\\concrete\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\services\\concrete\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.application\\services\\abstract\\iblogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\services\\abstract\\iblogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.application\\dtos\\blog\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\dtos\\blog\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\controllers\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\controllers\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.application\\services\\concrete\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4027F59A-DCA9-715C-EB6F-D2E736BE0FEC}|BlogApp.Application\\BlogApp.Application.csproj|solutionrelative:blogapp.application\\services\\concrete\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|e:\\dev\\repos\\selfstudy\\portfolio\\projects\\blogapp\\blogapp\\blogapp.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D37583D-9D9D-BC80-2F2B-67C9B256F76A}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlogPostService.cs",
-              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
-              "RelativeDocumentMoniker": "BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
-              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
-              "RelativeToolTip": "BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T23:30:47.186Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BlogApp.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "BlogApp.MVC\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T15:58:39.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BlogPostDto.cs",
-              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\DTOs\\Blog\\BlogPostDto.cs",
-              "RelativeDocumentMoniker": "BlogApp.Application\\DTOs\\Blog\\BlogPostDto.cs",
-              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\DTOs\\Blog\\BlogPostDto.cs",
-              "RelativeToolTip": "BlogApp.Application\\DTOs\\Blog\\BlogPostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "BlogApp.MVC\\Program.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Program.cs",
+              "RelativeToolTip": "BlogApp.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T23:28:07.898Z",
+              "WhenOpened": "2026-07-08T15:28:35.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IBlogPostService.cs",
-              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Abstract\\IBlogPostService.cs",
-              "RelativeDocumentMoniker": "BlogApp.Application\\Services\\Abstract\\IBlogPostService.cs",
-              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Abstract\\IBlogPostService.cs",
-              "RelativeToolTip": "BlogApp.Application\\Services\\Abstract\\IBlogPostService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BlogApp.MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BlogApp.MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T23:21:31.914Z",
+              "WhenOpened": "2026-07-08T15:15:07.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BlogPostController.cs",
               "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Controllers\\BlogPostController.cs",
               "RelativeDocumentMoniker": "BlogApp.MVC\\Controllers\\BlogPostController.cs",
               "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.MVC\\Controllers\\BlogPostController.cs",
               "RelativeToolTip": "BlogApp.MVC\\Controllers\\BlogPostController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T23:00:36.12Z",
+              "WhenOpened": "2026-07-08T15:15:03.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlogPostService.cs",
+              "DocumentMoniker": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
+              "RelativeDocumentMoniker": "BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
+              "ToolTip": "E:\\Dev\\Repos\\SelfStudy\\Portfolio\\Projects\\BlogApp\\BlogApp\\BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
+              "RelativeToolTip": "BlogApp.Application\\Services\\Concrete\\BlogPostService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowF0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T15:02:57.391Z",
               "EditorCaption": ""
             }
           ]
