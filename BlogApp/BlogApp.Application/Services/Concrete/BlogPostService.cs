@@ -17,6 +17,7 @@ namespace BlogApp.Application.Services.Concrete
             var blogPosts = await context.BlogPosts
                 .Include(bp => bp.Category)
                 .Include(bp => bp.Author)
+                .Where(bp => bp.Status == BlogPostStatus.Approved)
                 .Select(bp => new BlogPostDto
                 {
                     Id = bp.Id,
@@ -59,7 +60,8 @@ namespace BlogApp.Application.Services.Concrete
                 Content = request.Content,
                 AuthorId = request.AuthorId,
                 CategoryId = request.CategoryId,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                Status = BlogPostStatus.Pending
             };
 
             context.BlogPosts.Add(blogPost);
@@ -67,9 +69,32 @@ namespace BlogApp.Application.Services.Concrete
             return Result.Ok();
         }
 
-        public Task<Result<BlogPostDto>> GetBlogPostById(int id)
+        public async Task<Result<BlogPostDto>> GetBlogPostById(int postId)
         {
-            throw new NotImplementedException();
+            var blogPost = await context.BlogPosts
+                .Include(bp => bp.Author)
+                .Include(bp => bp.Category)
+                .FirstOrDefaultAsync(bp => bp.Id == postId && bp.Status == BlogPostStatus.Approved);
+
+            if (blogPost is null)
+                return Result<BlogPostDto>.Fail("Blogpost not found");
+
+            var blogPostDto = new BlogPostDto
+            {
+                Id = blogPost.Id,
+                Title = blogPost.Title,
+                Content = blogPost.Content,
+                AuthorId = blogPost.AuthorId,
+                AuthorFullName = $"{blogPost.Author.FirstName} {blogPost.Author.LastName}",
+                CategoryId = blogPost.CategoryId,
+                CategoryName = blogPost.Category.Name,
+                CreatedAt = blogPost.CreatedAt
+            };
+
+            return Result<BlogPostDto>.Ok(blogPostDto);
+
+
+
         }
 
 

@@ -12,7 +12,7 @@ namespace BlogApp.Application.Services.Abstract
         Task<Result<List<CategoryDto>>> GetAllCategories();
 
         Task<Result> CreateBlogPost(CreateBlogPostRequest request);
-        Task <Result<BlogPostDto>>GetBlogPostById(int id);
+        Task <Result<BlogPostDto>>GetBlogPostById(int postId);
 
         //void GetAllBlogPostsByAuthorId(int authorId);
         //void GetBlogPostDetail(int blogPostId);
