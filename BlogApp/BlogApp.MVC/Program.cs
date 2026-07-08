@@ -15,7 +15,7 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     await context.Database.EnsureCreatedAsync(); // refactor into migration
-    await DbSeeder.SeedRolesAsync(context);
+    await DbSeeder.SeedAsync(context);
 }
 
 if (!app.Environment.IsDevelopment())
